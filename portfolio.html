@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta content='en-gb' http-equiv='content-language'/>
+    <meta content='img/IMG_3620.jpg' property='og:image'/>
+    <meta name="author" content="Jesper Tillqvist">
+    <title>Jesper Tillqvist - Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Bespoke, Jewellery, CAD, Designer" name="keywords">
+    <meta content="Jesper Tillqvist Bespoke Jewellery CAD Designer Personal Website Online CV" name="description" property='og:description'>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#416100">
+    <link rel="icon" href="img/favicons/favicon.ico">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta content='#446600' name='theme-color'/>
+    <!-- Windows Phone -->
+    <meta content='#446600' name='msapplication-navbutton-color'/>
+    <!-- iOS Safari -->
+    <meta content='#446600' name='apple-mobile-web-app-status-bar-style'/>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/main.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="text-primary" style="width: 3rem; height: 3rem;" role="status">
+          <div class="spinner m-4">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+          </div>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-body bg-gradient navbar-light sticky-top p-0">
+      <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-primary">Jesper Tillqvist</h2>
+      </a>
+      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-lable="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto p-4 p-lg-0">
+          <li class="nav-item">
+           <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+           <a href="experience.html" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+           <a href="portfolio.html" class="nav-link active" aria-current="page">Portfolio</a>
+          </li>
+          <li class="nav-item">
+           <a href="benchwork.html" class="nav-link">Benchwork</a>
+          </li>
+          <li class="nav-item bg-primary">
+           <a href="contact.html" class="nav-link py-4 px-lg-5 d-lg-block text-light text-center">Contact
+           </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+  <header>
+    <div class="container-fluid py-1 mb-5">
+        <!-- Topbar Start -->
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="h-100 d-inline-flex align-items-center col-lg-6">
+              <small  class="p-3 ms-3">
+                <b>Bespoke Jewellery CAD designer</b>
+              </small>
+            </div>
+          <div class="col-lg-5 px-5 text-end mfloat-end">
+            <div class="h-100 d-inline-flex align-items-center">
+              <a class="btn btn-sm-square text-primary me-1" href="Jesper_Tillqvist_CV.pdf" alt="Download CV">
+                <i class="bi bi-file-earmark-text"></i>
+              </a>
+              <a class="btn btn-sm-square text-primary me-1" href="https://www.linkedin.com/in/jesperawoodwindrepair/" alt="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Topbar End -->
+      </div>
+    </header>
+      <!-- Page Header End -->
+
+
+        <!-- Portfolio Section -->
+    <main>      
+        <section id="portfolio" class="portfolio section">
+          <div class="section-title text-center">
+            <h1 class="display-5 mb-5">Portfolio</h1>
+        </div>
+
+    
+          <div class="container">  
+
+            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+              <div class="row mt-n2">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5 portfolio-filters isotope-filters" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".filter-minimalist">Minimalist</li>
+                        <li class="mx-2" data-filter=".filter-statement">Statement</li>
+                        <li class="mx-2" data-filter=".filter-traditional">Traditional</li>
+                        <li class="mx-2" data-filter=".filter-organic">Organic</li>
+                        
+                    </ul>
+                </div>
+            </div>
+    
+              <div class="row gy-4 isotope-container">
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                      <img src="img/portfolio/Trilogy/Platinum-Diamond-Triology-Ring.jpg" class="img-fluid" alt="Trilogy Platinum and Diamond Ring">
+                    </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                  <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                   <img src="img/portfolio/Castellated/Diamond-Castel-Set-Shank-Platinum-Ring-Perspective-View.jpg" class="img-fluid" alt="Castellated Diamond Ring">
+                  </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                    <a href="portfolio/portfolio-details.html" title="Emerald Sea" class="details-link">
+                      <img src="img/portfolio/Emerald-Sea/Emerald-Sea-Ring.jpg" class="img-fluid" alt="Emerald Sea">
+                    </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                  <a href="portfolio/Sapphire-Earrings.html" title="More Details and pictures" class="details-link">
+                    <img src="img/portfolio/Sapphire-Earrings/Blue-Square-Sapphire-and-Diamond-Sleves-Platinum-Stud-Earrings-Perspective-View-Upright.jpg" class="img-fluid" alt="Sapphire Earrings">
+                  </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                      <img src="img/portfolio/Marquise/Marquise-Diamond-Solitaire-Platinum-Ring-Perspective-View.jpg" class="img-fluid" alt="Marquise">
+                    </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic szoom">
+                  <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                    <img src="img/portfolio/Emma/Leafy-ring.jpg" class="img-fluid" alt="Leafy ring">
+                  </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                  <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                    <img src="img/portfolio/Black-Opal-Bracelet/Black-Opal-Bracelet-perspective-view.jpg" class="img-fluid" alt="Black Opal Bracelet">
+                  </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                  <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                      <img src="img/portfolio/Terraced-Diamond-Ring/Terraced-diamond-ring-perspective-view.jpg" class="img-fluid" alt="Terraced diamond ring">
+                    </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Sapphire-and-Diamond-Cluster-Platinum-Pendant/Sapphire-and-Diamond-Cluster-Platinum-Pendant-Front-View.jpg" class="img-fluid" alt="Sapphire and Diamond Cluster Platinum Pendant">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic szoom">
+                      <a href="portfolio/Aztec.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Tillqvist/Tillqvist-Engagment-ring-on-its-own.jpg" class="img-fluid" alt="Tillqvist">
+                      </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                      <a href="portfolio/Aztec.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Aztec/Ancient-Civilazations-inspired-Ring.jpg" class="img-fluid" alt="Ancient Civilazations inspired Ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Grass-Pendant/Grass-Straw-Bespoke-Platinum-Pendant.jpg" class="img-fluid" alt="Grass Pendant">
+                      </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Ribbon/Ribbon-ring.jpg" class="img-fluid" alt="Ribbon Ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                   <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Diana/Hand-Fabricated-Ruby-and-Diamond-Halo-Platinum-Ring-Perspective-View.jpg" class="img-fluid" alt="Diana ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Pearcrossover/Pear-shape-Diamond-Solitaire-Platinum-Cross-Over-Ring-Perspective-View.jpg" class="img-fluid" alt="Pearcrossover">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic szoom">
+                    <a href="portfolio/FIX.html" title="More Details" class="details-link">
+                      <img src="img/portfolio/Squiggle-fitted-weddingring/Split-fitted-squiggle-ring.jpg" class="img-fluid" alt="Fitted Squiggle Fitted Weddingring">
+                    </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Traditional/Traditional-Emerald-and-Diamond-Platinum-Ring.jpg" class="img-fluid" alt="Traditional">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Silver-Bangle/Silver-Bangle.jpg" class="img-fluid" alt="Silver Bangle">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Fitted-V-ring/Fitted-V-ring.jpg" class="img-fluid" alt="Fitted V weddingring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                    <a href="portfolio/Aztec.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Sapphire-dressring/Sapphire-dressring.jpg" class="img-fluid" alt="Sapphire Dressring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                    <a href="portfolio/FIX.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Wirecrown/Wirecrown-Ruby-and-Diamond-Platinum-Engagement-Ring-Perpsective-View.jpg" class="img-fluid" alt="Wirecrown">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Celtic-Opal/Celtic-Opal.jpg" class="img-fluid" alt="Celtic opal ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Celtic-sleeve/Platinum-Celtic-Round-Knot-Men's-Wedding-Ring-Perspective-View.jpg" class="img-fluid" alt="Celtic Sleves">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic szoom">
+                    <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Double-halo/Double-halo.jpg" class="img-fluid" alt="Double Halo">
+                      </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Gents/Platinum-three-diamond-wedding-ring-gents.jpg" class="img-fluid" alt="Gents Wedding ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Emerald/Modern-emerald-ring.jpg" class="img-fluid" alt="Modern emerald ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Gold-cluster/Gold-cluster-ring.jpg" class="img-fluid" alt="Golden cluster ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Flick/18ct-rose-gold-solitaire-diamond-engagement-ring.jpg" class="img-fluid" alt="Flick">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Waterflow/Waterflow-pendant.jpg" class="img-fluid" alt="Waterflow">
+                      </a>
+                </div><!-- End Portfolio Item -->
+    
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Amethyst/Amethyst-ring.jpg" class="img-fluid" alt="Amethyst ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Gents-crossover/Gents-crossover.jpg" class="img-fluid" alt="Gents crossover ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+
+                <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic szoom">
+                      <a href="portfolio/portfolio-details.html" title="More Details" class="details-link">
+                        <img src="img/portfolio/Squiggle-Ring/Platinum-squiggle-ring.jpg" class="img-fluid" alt="Squiggle Ring">
+                      </a>
+                </div><!-- End Portfolio Item -->
+      
+              </div><!-- End Portfolio Container -->
+    
+            </div>
+    
+          </div>
+    
+        </section>
+      </main>  
+        <!-- /Portfolio Section -->
+        
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="container-fluid bg-dark bg-gradient footer mt-3 pt-3">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+              <div class="col-md-1 text-center text-light text-md-start mb-3 mb-md-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                    <symbol id="check2" viewBox="0 0 16 16">
+                      <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+                    </symbol>
+                    <symbol id="circle-half" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"></path>
+                    </symbol>
+                    <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+                      <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
+                      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"></path>
+                    </symbol>
+                    <symbol id="sun-fill" viewBox="0 0 16 16">
+                      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
+                    </symbol>
+                  </svg>
+                  <div class="dropdown me-3 bd-mode-toggle col-lg-2 pt-2">
+                   <div class="dropdown bd-mode-toggle">
+                    <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center rounded-1" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                      <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                      </svg>
+                      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow rounded-1" aria-labelledby="bd-theme-text">
+                      <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                            <use href="#sun-fill"></use>
+                          </svg> Light <svg class="bi ms-auto d-none" width="1em" height="1em">
+                            <use href="#check2"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                            <use href="#moon-stars-fill"></use>
+                          </svg> Dark <svg class="bi ms-auto d-none" width="1em" height="1em">
+                            <use href="#check2"></use>
+                          </svg>
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                          <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                            <use href="#circle-half"></use>
+                          </svg> Auto <svg class="bi ms-auto d-none" width="1em" height="1em">
+                            <use href="#check2"></use>
+                          </svg>
+                        </button>
+                      </li>
+                    </ul>
+                   </div>
+                  </div>
+              </div>
+              <div class="col-md-3 text-center text-light text-md-start mb-3 mb-md-0">
+                  <div class="d-flex align-items-center justify-content-center pt-2 col-lg-9">
+                    <a class="btn btn-outline-light btn-social" href="Jesper_Tillqvist_CV.pdf" aria-label="Download CV pdf-file">
+                      <i class="bi bi-file-earmark-text"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/jesperawoodwindrepair/" aria-label="Link to LinkedIn">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social" href="contact.html" aria-label="Link to contact form">
+                      <i class="bi bi-envelope"></i>
+                    </a>
+                  </div>
+              </div>
+              
+              <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <div class="d-flex align-items-center justify-content-center pt-2">
+                  <a href="https://gemvision.com/" target="_blank" aria-label="Matrix website">
+                    <img class="img-fluid p-2 mx-auto mb-3" src="img/matrix_icon.png" alt="Matrix Icon" style="width: 140px; height: 70px;">
+                  </a>
+                  <a href="https://www.rhino3d.com/" target="_blank" aria-label="Rhino website">
+                    <img class="img-fluid p-2 mx-auto mb-3" src="img/rhino_icon.png" alt="Rhino Icon" style="width: 70px; height: 70px;">
+                  </a>
+                  <a href="https://www.blender.org/" target="_blank" aria-label="Blender website">
+                    <img class="img-fluid p-2 mx-auto mb-3" src="img/blender_icon.png" alt="Blender Icon" style="width: 70px; height: 70px;">
+                  </a>
+                </div>
+              </div>
+              
+              <div class="col-md-4 text-center text-md-start mb-3 mb-md-0 small text-opacity-50">
+                <small>
+                 &copy; Copyright 2025 | All Right Reserved | Website by <a class="border-bottom" href="index.html" aria-label="Link to website creator Jesper Tillqvist's website">Jesper Tillqvist</a>
+                </small>
+              </div>
+            </div>
+          <br />
+        </div>
+      </div>
+  </footer>
+  <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#top" aria-label="scroll back to top" class="btn btn-primary rounded-3 back-to-top text-light" title="Back to top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

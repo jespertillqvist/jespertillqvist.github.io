@@ -1,101 +1,72 @@
-(function ($) {
+(function() {
     "use strict";
-
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
-    };
-    spinner();
-    
-    
-    // Initiate the wowjs
-    new WOW().init();
-
-
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
-        } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+  
+// Spinner
+function spinner() {
+    setTimeout(function () {
+        var spinner = document.getElementById('spinner');
+        if (spinner) {
+            spinner.classList.remove('show');
         }
+    }, 1);
+}
+spinner();
+
+
+// Sticky Navbar
+window.addEventListener('scroll', function () {
+    var navbar = document.querySelector('.sticky-top');
+    if (window.scrollY > 300) {
+        navbar.classList.add('shadow-sm');
+        navbar.style.top = '0px';
+    } else {
+        navbar.classList.remove('shadow-sm');
+        navbar.style.top = '-100px';
+    }
+});
+
+
+// Back to top button
+window.addEventListener('scroll', function () {
+    var backToTop = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+document.querySelector('.back-to-top').addEventListener('click', function () {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+// Portfolio isotope and filter
+document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
+    let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+    let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+    let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+
+    let initIsotope;
+    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
+      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+        itemSelector: '.isotope-item',
+        layoutMode: layout,
+        filter: filter,
+        sortBy: sort
+      });
     });
-    
-    
-    // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
+
+    isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
+      filters.addEventListener('click', function() {
+        isotopeItem.querySelector('.isotope-filters .active').classList.remove('active');
+        this.classList.add('active');
+        initIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        if (typeof aosInit === 'function') {
+          aosInit();
         }
-    });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
+      }, false);
     });
 
-
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-    // Header carousel
-    $(".header-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        items: 1,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
-
-
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            }
-        }
-    });
-
-
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
-    });
-    
-})(jQuery);
-
+  });
+})();
