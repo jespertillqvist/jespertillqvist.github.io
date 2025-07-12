@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="js/color-modes.js"></script>
     <meta charset="utf-8">
     <meta content='en-gb' http-equiv='content-language'/>
     <meta content='img/IMG_3620.jpg' property='og:image'/>
@@ -36,8 +35,12 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/main.min.css" rel="stylesheet">
 
-
-    <!-- <link href="./style.css" rel="stylesheet"> -->
+    <!-- JavaScript Libraries -->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+    <!-- Template Javascript -->
+    <script defer src="js/color-modes.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer type="module" src="js/index.js"></script>
   </head>
   <body>
     <!-- Spinner Start -->
@@ -63,7 +66,7 @@
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav ms-auto p-4 p-lg-0">
       <li class="nav-item">
-       <a href="about.html" class="nav-link active" aria-current="page">About</a>
+       <a href="index.html#about" class="nav-link active" aria-current="page">About</a>
       </li>
       <li class="nav-item">
        <a href="experience.html" class="nav-link">Experience</a>
@@ -109,40 +112,47 @@
         <!-- Page Header End -->
 <canvas id="bg"></canvas> 
     <main class="abs">
-      <div class="container-fluid overflow-hidden px-lg-0">
+      <div id="container" class="container-fluid overflow-hidden px-lg-0">
+        <div class="slider"></div>
+      </div>
+    </main>
+    <section class="py-5 bigspace"></section>
+    <!-- About Start -->
+<div id="animation-trigger">
+  <section id="about">
+    <div class="container-fluid overflow-hidden px-lg-0">
         <div class="container feature px-lg-0">
-          <div class="row g-0 mx-lg-0">
-            <div class="col-lg-8 feature-text py-5">
-              <div class="p-lg-5 ps-lg-0">
-                <div class="section-title text-start py-5 bigspace">
-                 <header>
-                  <p class="small mb-0">Bespoke Jewellery CAD designer</p>
-                  <h1 class="display-1">Jesper Tillqvist</h1>
-                  <p>Eastmiddlands UK</p>
-                 </header>
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-8 feature-text py-5">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">About Jesper Tillqvist</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Designing, making and restoring woodwind instruments was where I began my career, learning the intricacies of precious metalwork and precision engineering through all stages of the creative workflow.<br/>
+                          <br/>
+                          These skills led me to the fine jewellery industry where I learned to interpret the needs of clients into beautiful, one off pieces.<br/>
+                          <br/>
+                          Running parallel has always been my interest in technology and developing skills in coding, web design and 3D modelling.<br/>
+                          <br/>
+                          Combining jewellery making and design into work with CAD was a natural and fulfilling career step for me.<br/>
+                           <a href="/contact">Contact me here</a>.</p>
+                           <p><a href="experience.html">Read more about my experiences.</a></p>
+                           <p style="white-space:pre-wrap;">Below you can see some of my work click through to my <a href="/project">portfolio</a> for more.</p>
+  
+  
+                        
+                    </div>
                 </div>
+                <div class="col-lg-4 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/IMG_3620.jpg" style="object-fit: cover;" alt="Jesper Tillqvist">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-               <section class="py-5 bigspace">
-        <h2>Welcome to my web-cv. </h2>
-        <p>
-          I am an experienced, and multi-disciplinary Jewellery & web designer. I deliver professional CAD (Computer Aided Design) renders, 3d files and bespoke websites. I both design and develop complete websites for small businesses world wide. Contact me to today and transform your business through design. I am available to work on a single project or as an employed basis for continuous work with stock pieces, commissions, IT support, website building and maintanance. Take your business to new heights by investing in high experienced versatile staff.
-        </p>
-
-        <a href="contact.html" class="btn btn-primary w-100 py-3">Contact me now</a>
-
-               </section>
-
-               <section class="py-5 bigspace">
-        <h2>Click through to my Portfolio</h2>
-
-        <p>
-          A small selection of thousands of projects. If you click through on the link on any piece there are some further pictures and or 3d models and some description on that specific project. 
-        </p>
-        <a href="portfolio.html" class="btn btn-primary w-100 py-3 text-light">Portfolio</a>
-
-               </section>
-
-               <section class="py-5 bigspace">
+    <!-- About End -->
         <div class="container px-4 py-5">
           <h2 class="border-bottom">Skills</h2>
       
@@ -217,31 +227,47 @@
           </div>
         </div>
 
+    <!-- MiniPortfolio Start -->
 
-               </section>
-
-               <section class="py-5 bigspace">
-        <h2>Experience</h2>
-
-        <p>
-          I've listed a compressed work history here. Click on any listing for more details. For a fuller picture of my rather wide experience visit my linkedIn.
-        </p>
-       
-        <a href="experience.html" class="btn btn-primary text-light w-20 py-3">Experience</a>
-        <a class="btn btn-md-square text-primary" href="https://www.linkedin.com/in/jesperawoodwindrepair/" alt="LinkedIn Profile">
-          <i class="bi bi-linkedin"></i>
-        </a>
-
-               </section>
-
-               <section class="mspace">
-        <p class="display-4">Thanks for visiting!</p>
-               </section>
-              </div>
-            </div>
+    <div class="container-xxl py-5 portfolio section" id="portfolio">
+      <div class="section-title text-center">
+        <h3 class="display-5 mb-5">Small selection of projects</h3>
+    </div>
+      <div class="row gy-4 isotope-container">
+    
+        <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-minimalist">
+          <img src="img/portfolio/Marquise/Marquise-Diamond-Solitaire-Platinum-Ring-Perspective-View.jpg" class="img-fluid" alt="FIX">
+          <div class="portfolio-info">
+            <h4>Marquise</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="portfolio/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
           </div>
-        </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-organic">
+          <img src="img/portfolio/Emma/Leafy-ring.jpg" class="img-fluid" alt="FIX">
+          <div class="portfolio-info">
+            <h4>Leafy ring</h4>
+            <p>Lorem ipsum, dolor sit</p>
+            <a href="portfolio/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Portfolio Item -->
+      
+        <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-statement szoom">
+            <a href="portfolio/Emerald-Sea.html" title="Emerald Sea" class="details-link">
+              <img src="img/portfolio/Emerald-Sea/Emerald-Sea-Ring.jpg" class="img-fluid" alt="Emerald Sea">
+            </a>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-traditional szoom">
+          <a href="portfolio/Sapphire-Earrings.html" title="More Details and pictures" class="details-link">
+            <img src="img/portfolio/Sapphire-Earrings/Blue-Square-Sapphire-and-Diamond-Sleves-Platinum-Stud-Earrings-Perspective-View-Upright.jpg" class="img-fluid" alt="Sapphire Earrings">
+          </a>
+        </div><!-- End Portfolio Item -->
       </div>
+    </div>
+  </section>  
+    <!-- MiniPortfolio End -->
       <!-- Footer Start -->
       <footer>
   <div class="container-fluid bg-dark bg-gradient footer mt-3 pt-3">
@@ -341,40 +367,10 @@
       </div>
     </div>
       </footer>
+      </div>
       <!-- Footer End -->
-    </main>
-    
-    <script type="module" src="/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Back to Top -->
     <a href="#top" aria-label="scroll back to top" class="btn btn-primary rounded-3 back-to-top text-light" title="Back to top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-
-
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-
   </body>
 </html>
